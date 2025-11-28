@@ -32,6 +32,16 @@ body{margin:0;background:var(--bg);color:#111;font-family:var(--font,Roboto),san
 .gallery-item{width:100%;height:160px;object-fit:cover;border-radius:6px;cursor:pointer}
 .lightbox{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);visibility:hidden;opacity:0;transition:opacity .2s}
 .lightbox img{max-width:90%;max-height:80%;border-radius:6px}
+.events-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:0.75rem}
+.event-item{position:relative;border-radius:6px;overflow:hidden}
+.event-item img{width:100%;height:140px;object-fit:cover;display:block}
+.event-remove{position:absolute;top:6px;right:6px;background:rgba(0,0,0,0.6);color:#fff;border:0;padding:4px 6px;border-radius:4px;cursor:pointer}
+
+/* Settings panel */
+.settings-toggle{position:fixed;right:16px;bottom:16px;background:var(--accent);color:#fff;border:0;padding:0.5rem 0.75rem;border-radius:8px;z-index:60}
+.settings-panel{position:fixed;right:16px;bottom:72px;width:260px;background:#fff;border:1px solid #e6e9ef;padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.08);z-index:60;display:none}
+.settings-panel h3{margin:0 0 0.5rem}
+.settings-panel label{display:block;margin:0.5rem 0}
 .contact-form{display:grid;gap:0.5rem;grid-template-columns:1fr;max-width:520px}
 .contact-form label{display:block}
 .contact-form input,.contact-form textarea{width:100%;padding:0.5rem;border:1px solid #d1d5db;border-radius:6px}

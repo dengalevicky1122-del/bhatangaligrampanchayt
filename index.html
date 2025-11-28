@@ -5,12 +5,25 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>ग्रामपंचायत - मुख्य पान</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+	<button id="settingsToggle" class="settings-toggle" aria-expanded="false">सेटिंग्ज</button>
+	<aside id="settingsPanel" class="settings-panel" aria-hidden="true">
+		<h3>वैयक्तिक सेटिंग्ज</h3>
+		<label>पृष्ठभूमीचा रंग: <input id="bgColorInput" type="color" value="#f7f8fb"></label>
+		<label>फॉन्ट निवडा:
+			<select id="fontSelect">
+				<option value="Roboto, sans-serif">Roboto (default)</option>
+				<option value="'Noto Sans Devanagari', Roboto, sans-serif">Noto Sans Devanagari</option>
+			</select>
+		</label>
+		<button id="settingsClose" class="btn">बंद करा</button>
+	</aside>
 	<header class="site-header">
 		<div class="container header-inner">
-			<a class="brand" href="#">ग्रामपंचायत</a>
+			<a class="brand" href="#">ग्रामपंचायत कार्यालय भातांगळी,लातूर</a>
 			<button id="menuToggle" class="nav-toggle" aria-expanded="false">मेनू</button>
 			<nav id="mainNav" class="main-nav" aria-label="मुख्य नेव्हिगेशन">
 				<ul>
@@ -96,6 +109,16 @@
 				<img class="gallery-item" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=800&q=60" alt="गावातील दृश्य 3">
 			</div>
 			<div id="lightbox" class="lightbox" aria-hidden="true"><img id="lightboxImg" src="" alt=""></div>
+		</section>
+
+		<section id="events" class="container section">
+			<h2>इव्हेंट्स - फोटो अपलोड करा</h2>
+			<p>आपल्या ग्रामकार्यक्रमांचे फोटो इथे अपलोड करा. स्थानीय ब्राउझरमध्ये हे साठवले जातील (स्थायी साठवणीसाठी सर्व्हर आवश्यक).</p>
+			<form id="eventUploadForm">
+				<input id="eventFiles" type="file" accept="image/*" multiple>
+				<button type="submit" class="btn">अपलोड करा</button>
+			</form>
+			<div id="eventsGallery" class="events-grid"></div>
 		</section>
 
 		<section id="meetings" class="container section">
