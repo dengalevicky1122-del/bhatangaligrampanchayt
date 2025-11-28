@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="mr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>ग्रामपंचायत - मुख्य पान</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="#">ग्रामपंचायत</a>
+			<button id="menuToggle" class="nav-toggle" aria-expanded="false">मेनू</button>
+			<nav id="mainNav" class="main-nav" aria-label="मुख्य नेव्हिगेशन">
+				<ul>
+					<li><a href="#about">बद्दल</a></li>
+					<li><a href="#officials">पदाधिकारी</a></li>
+					<li><a href="#payments">ऑनलाइन कर</a></li>
+					<li><a href="#news">बातम्या</a></li>
+					<li><a href="#schemes">शासकीय योजना</a></li>
+					<li><a href="#gallery">गॅलरी</a></li>
+					<li><a href="#meetings">ग्रामसभा</a></li>
+					<li><a href="#contact">संपर्क</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container">
+				<h1>आपल्या ग्रामपंचायतीच्या सेवा आता ऑनलाइन</h1>
+				<p>संपूर्ण माहिती, जाहीर सूचना, अधिकारी व संपर्क — सर्व काही एका क्लिकवर.</p>
+				<a class="cta" href="#contact">संपर्क करा</a>
+			</div>
+		</section>
+
+		<section id="about" class="container section">
+			<h2>ग्रामपंचायतीची माहिती</h2>
+			<p>येथे आपल्या ग्रामपंचायतीची इतिहास, उद्दिष्टे आणि कार्यपद्धतीची संक्षिप्त माहिती द्या. स्थानिक सेवांबाबत माहिती, कार्यालयाचे वेळापत्रक आणि प्राथमिक सेवांचे तत्त्वे येथे असावीत.</p>
+		</section>
+
+		<section id="officials" class="container section">
+			<h2>पदाधिकाऱ्यांची माहिती</h2>
+			<div class="cards">
+				<article class="card">
+					<h3>सरपंच</h3>
+					<p>श्री. रामराव कदम</p>
+					<p>फोन: <a href="tel:+919000000000">+91 90000 00000</a></p>
+				</article>
+				<article class="card">
+					<h3>उपसरपंच</h3>
+					<p>श्रीमती. सीमा पाटील</p>
+					<p>ई-मेल: <a href="mailto:seema@grampanchayat.example">seema@grampanchayat.example</a></p>
+				</article>
+				<article class="card">
+					<h3>कार्यकारी अधिकारी</h3>
+					<p>श्री. दिनेश शिंदे</p>
+				</article>
+			</div>
+		</section>
+
+		<section id="payments" class="container section">
+			<h2>ऑनलाइन कर भरताना (QR)</h2>
+			<p>कर भरण्यासाठी खालील QR कोड स्कॅन करा किंवा व्यवस्थापकाकडून दिलेल्या निर्देशांचे पालन करा.</p>
+			<div class="qr-area">
+				<img src="https://via.placeholder.com/260x260.png?text=QR+कोड+येथे" alt="QR कोड - कर भरण्यासाठी"/>
+				<div class="qr-note">QR इमेज अपलोड करा किंवा देण्यात आलेली भरणा लिंक वापरा.</div>
+			</div>
+		</section>
+
+		<section id="news" class="container section">
+			<h2>गावातील बातम्या व जाहीर सूचना</h2>
+			<ul class="news-list">
+				<li><strong>जनरल निवडणूक:</strong> २० डिसेंबरला ग्रामसभा बैठक.</li>
+				<li><strong>पाणीपुरवठा:</strong> नवीन पंप योजनेची अद्यतने प्रकाशित.</li>
+			</ul>
+		</section>
+
+		<section id="schemes" class="container section">
+			<h2>शासकीय योजना</h2>
+			<div class="accordion">
+				<button class="accordion-toggle">मनरेगा</button>
+				<div class="accordion-panel">मनरेगा अंतर्गत उपलब्ध कामे, मानधन व अर्ज प्रक्रिया येथे द्या.</div>
+				<button class="accordion-toggle">प्रधानमंत्री आवास योजना</button>
+				<div class="accordion-panel">अर्ज कसा करावा व आवश्यक कागदपत्रे.</div>
+			</div>
+		</section>
+
+		<section id="gallery" class="container section">
+			<h2>गॅलरी / फोटो</h2>
+			<div class="gallery-grid">
+				<img class="gallery-item" src="https://images.unsplash.com/photo-1504198266286-1659872e6590?w=800&q=60" alt="गावातील दृश्य 1">
+				<img class="gallery-item" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=800&q=60" alt="गावातील दृश्य 2">
+				<img class="gallery-item" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=800&q=60" alt="गावातील दृश्य 3">
+			</div>
+			<div id="lightbox" class="lightbox" aria-hidden="true"><img id="lightboxImg" src="" alt=""></div>
+		</section>
+
+		<section id="meetings" class="container section">
+			<h2>ग्रामसभेचे निर्णय</h2>
+			<ol>
+				<li>३० ऑक्टोबर २०२५ — सार्वजनिक पंपांचे दुरुस्तीचे मंजुरी.</li>
+				<li>१५ नोव्हेंबर २०२५ — नवीन स्वच्छता मोहिमेची सुरूवात.</li>
+			</ol>
+		</section>
+
+		<section id="contact" class="container section contact-section">
+			<h2>संपर्क माहिती</h2>
+			<p>कार्यालयाचा पत्ता: ग्रामपंचायत कार्यालय, तुमचे गाव, जिल्हा.</p>
+			<p>फोन: <a href="tel:+919000000000">+91 90000 00000</a> | ई-मेल: <a href="mailto:info@gram.example">info@gram.example</a></p>
+			<form id="contactForm" class="contact-form" action="#" onsubmit="return false;">
+				<label>नावे<input type="text" name="name" required></label>
+				<label>ई-मेल<input type="email" name="email" required></label>
+				<label>संदेश<textarea name="message" rows="4" required></textarea></label>
+				<button type="submit" class="btn">पाठवा</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© २०२५ ग्रामपंचायत. सर्व हक्क राखीव.</p>
+		</div>
+	</footer>
+
+	<script src="assets/scripts.js"></script>
+</body>
+</html>
